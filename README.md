@@ -6,7 +6,6 @@ This repository provides a critical solution for the **Infinix Note 11 (X663)** 
 <img width="160" height="500" alt="Screenshot_20251102-040013_Settings" src="https://github.com/user-attachments/assets/c5201e62-7547-4cde-94e7-99754a436f33"/>
 </div>
 <br>
-<br>
 This fix involves applying the BPF Kernel Patcher to the stock boot image to ensure network connectivity on custom ROMs.
 
 ---
@@ -31,9 +30,11 @@ When flashing any modern GSI (e.g., AOSP A15 or DerpFest A16) on the Infinix Not
 
 ## **The Solution**
 
-1.First try using ```adb shell settings put global restricted_networking_mode 0```
+1. First try this command
+```adb shell settings put global restricted_networking_mode 0
+```
 
-2.The **`mtk-bpf-patcher`** has been successfully applied to the stock `boot.img` to ensure mobile data works correctly with modern GSIs.
+2. The **`mtk-bpf-patcher`** has been successfully applied to the stock `boot.img` to ensure mobile data works correctly with modern GSIs.
 
 ### **Included Files**
 
