@@ -24,7 +24,9 @@ When flashing any modern GSI (e.g., AOSP A15 or DerpFest A16) on the Infinix Not
 
 ## **The Solution**
 
-The **`mtk-bpf-patcher`** has been successfully applied to the stock `boot.img` to ensure mobile data works correctly with modern GSIs.
+1.First try using ```adb shell settings put global restricted_networking_mode 0```
+
+2.The **`mtk-bpf-patcher`** has been successfully applied to the stock `boot.img` to ensure mobile data works correctly with modern GSIs.
 
 ### **Included Files**
 
