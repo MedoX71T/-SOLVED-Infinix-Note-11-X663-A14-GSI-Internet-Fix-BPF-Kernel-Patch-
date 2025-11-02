@@ -12,13 +12,13 @@ This fix involves applying the BPF Kernel Patcher to the stock boot image to ens
 | **Codename** | X663 |
 | **SoC** | MediaTek Helio G88 (MT6769H) |
 | **Target OS** | GSI - Android 14+ |
-| **Problem Solved** | Mobile Data (Internet) Connectivity |
+| **Problem Solved** | WiFi - Mobile Data (Internet) Connectivity |
 
 ---
 
 ## **The Problem**
 
-When flashing any modern GSI (e.g., PixelOS A14 or DerpFest A16) on the Infinix Note 11 (X663), the device boots correctly, but **Mobile Data (cellular internet) fails to work entirely**. This is a known issue on many MediaTek devices and requires a specific patch to the kernel within the `boot.img` to enable the necessary BPF layer for network function.
+When flashing any modern GSI (e.g., AOSP A15 or DerpFest A16) on the Infinix Note 11 (X663), the device boots correctly, but **Mobile Data (cellular internet) fails to work entirely**. This is a known issue on many MediaTek devices and requires a specific patch to the kernel within the `boot.img` to enable the necessary BPF layer for network function.
 
 ---
 
