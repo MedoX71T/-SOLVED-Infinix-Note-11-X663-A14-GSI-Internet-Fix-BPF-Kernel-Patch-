@@ -59,22 +59,23 @@ adb shell settings put global restricted_networking_mode 0
 1.  Download the **`patched_boot_bpf_fix.img`** file to an easily accessible folder on your computer (e.g., your ADB folder).
 2.  Open Command Prompt or PowerShell in your ADB/Fastboot directory.
 3.  Verify your device is connected:
+   
     ```bash
     adb devices
     ```
-4.  Restart to bootloader
+5.  Restart to bootloader
     ```bash
     adb reboot bootloader  
     ```
-5.  Enter fastbootd Mode
+6.  Enter fastbootd Mode
     ```bash
     fastboot reboot fastboot 
     ```
-6.  Flash the patched boot image:
+7.  Flash the patched boot image:
     ```bash
     fastboot flash boot patched_boot_bpf_fix.img
     ```
-7.  Once flashing is complete, reboot your device:
+8.  Once flashing is complete, reboot your device:
     ```bash
     fastboot reboot
     ```
